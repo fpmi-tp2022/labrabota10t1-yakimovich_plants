@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D8F23CA2-9F60-4D17-8B5C-5011E8A01410"
-            shouldBeEnabled = "No"
+            uuid = "9092A9B2-9048-453B-A6C6-5392D3162935"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "yakimovich_plants/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "buttonSignIn(_:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "movePage(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

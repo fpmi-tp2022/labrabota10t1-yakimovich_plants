@@ -15,7 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var password_scene1: UITextField!
     @IBOutlet weak var imageStart: UIImageView!
     @IBAction func movePage(_ sender: Any) {
-        if switcherLabel.selectedSegmentIndex == 2 {
+        if switcherLabel.selectedSegmentIndex == 1 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let secondVC = storyboard.instantiateViewController(identifier: "RegistrationView")
+                        
+                        secondVC.modalPresentationStyle = .fullScreen
+                        secondVC.modalTransitionStyle = .crossDissolve
+                        
+                        present(secondVC, animated: true, completion: nil)
             // zagruzka
         }
     }
@@ -25,8 +32,7 @@ class ViewController: UIViewController {
                 let plist = NSMutableDictionary(contentsOfFile: path)
                 
                 let pass = plist?.value(forKey: login_scene1.text!)
-        print(login_scene1.text)
-        print(password_scene1.text)
+
                 if (pass == nil){
                     labelResult.text = "No such user!"
                  

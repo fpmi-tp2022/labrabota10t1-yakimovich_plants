@@ -16,6 +16,7 @@
 		9E39E2CF286227E30017693A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E39E2CD286227E30017693A /* LaunchScreen.storyboard */; };
 		9E39E2D828622E6B0017693A /* userData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E39E2D728622E6B0017693A /* userData.plist */; };
 		9E39E2DB286239D80017693A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E39E2DA286239D80017693A /* ProfileView.swift */; };
+		9E431F0C286247FF00C69419 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E431F0B286247FF00C69419 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9E39E2D0286227E30017693A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E39E2D728622E6B0017693A /* userData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = userData.plist; sourceTree = "<group>"; };
 		9E39E2DA286239D80017693A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9E431F0B286247FF00C69419 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9E39E2C8286227E10017693A /* yakimovich_plants.xcdatamodeld */,
 				9E39E2D728622E6B0017693A /* userData.plist */,
 				9E39E2DA286239D80017693A /* ProfileView.swift */,
+				9E431F0B286247FF00C69419 /* RegistrationView.swift */,
 			);
 			path = yakimovich_plants;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				9E39E2C4286227E10017693A /* ViewController.swift in Sources */,
 				9E39E2C0286227E10017693A /* AppDelegate.swift in Sources */,
 				9E39E2DB286239D80017693A /* ProfileView.swift in Sources */,
+				9E431F0C286247FF00C69419 /* RegistrationView.swift in Sources */,
 				9E39E2C2286227E10017693A /* SceneDelegate.swift in Sources */,
 				9E39E2CA286227E10017693A /* yakimovich_plants.xcdatamodeld in Sources */,
 			);
