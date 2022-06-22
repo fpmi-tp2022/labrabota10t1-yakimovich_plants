@@ -28,7 +28,7 @@ struct PlantModel{
             }
 
         }
-        return arr
+           return arr.sorted(by: {$0.plantName < $1.plantName})
        
        
     }
@@ -50,7 +50,8 @@ struct PlantModel{
             i += 1
 
         }
-        return arr
+       
+        return arr.sorted(by: {$0.plantName < $1.plantName})
        
        
     }

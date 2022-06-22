@@ -6,9 +6,9 @@
 //
 
 import UIKit
-
+var plantName = String()
 class PlantInfoView : UIViewController{
-    var plantName = String()
+    
     @IBOutlet weak var plantNameLabel: UILabel!
     @IBAction func swipe(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -28,11 +28,13 @@ class PlantInfoView : UIViewController{
     @IBOutlet weak var size: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        plantName = selectedPlant
         plantNameLabel.text = plantName
         let path = Bundle.main.path(forResource: "plantsData", ofType: ".plist")
         let dictionary = NSDictionary(contentsOfFile: path!)
         let data = dictionary?.object(forKey: "plantInfo") as? NSDictionary
         let dictPlant = data?.value(forKey: plantName) as? NSDictionary
+        print(plantName)
         let imgName = dictPlant?.object(forKey:     "image") as! String
         let dscr = dictPlant?.object(forKey:     "description") as! String
         let waterText =  dictPlant?.object(forKey:     "water") as! String

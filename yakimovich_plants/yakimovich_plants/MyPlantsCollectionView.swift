@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+var selectedPlant = String()
 
 class MyPlantsCollectionView:   UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var cells = [PlantModel]()
@@ -26,7 +26,7 @@ class MyPlantsCollectionView:   UICollectionView, UICollectionViewDelegate, UICo
         return CGSize(width: 400, height: 100)
     }
      
-    var selectedPlant = String()
+  
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        print("hello2")
         myPlants.insert(cells[indexPath.row].plantName)

@@ -14,7 +14,7 @@ class ProfileView : UIViewController{
     @objc  func loadInfo(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let secondVC = storyboard.instantiateViewController(identifier: "PlantInfoView") as PlantInfoView
-        secondVC.plantName = galleryCollectionView.selectedPlant
+       
                     
                     secondVC.modalPresentationStyle = .fullScreen
                     secondVC.modalTransitionStyle = .crossDissolve

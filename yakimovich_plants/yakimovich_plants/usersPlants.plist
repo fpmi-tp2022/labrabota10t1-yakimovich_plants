@@ -2,6 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>plants_alex</key>
+	<array>
+		<string>Philodron brasil</string>
+		<string>Philodron brasil</string>
+		<string>Philodron brasil</string>
+		<string>Zanzibar gem</string>
+		<string>Zanzibar gem</string>
+		<string>Zanzibar gem</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Fiddle leaf figs</string>
+		<string>Fiddle leaf figs</string>
+		<string>Fiddle leaf figs</string>
+		<string>Bird of paradise</string>
+		<string>Bird of paradise</string>
+		<string>Fiddle leaf figs</string>
+		<string>Peperomia obtusifolia</string>
+		<string>Peperomia obtusifolia</string>
+	</array>
 	<key>plants_s</key>
 	<array>
 		<string>Money tree</string>
@@ -79,6 +98,13 @@
 		<string>Fiddle leaf figs</string>
 		<string>Fiddle leaf figs</string>
 		<string>Fiddle leaf figs</string>
+		<string>Philodron brasil</string>
+		<string>Bird of paradise</string>
+		<string>Fiddle leaf figs</string>
+		<string>Money tree</string>
+		<string>Peperomia obtusifolia</string>
+		<string>Philodron brasil</string>
+		<string>Zanzibar gem</string>
 	</array>
 </dict>
 </plist>
