@@ -6,6 +6,8 @@
 	<dict>
 		<key>Bird of paradise</key>
 		<dict>
+			<key>description</key>
+			<string></string>
 			<key>location</key>
 			<string></string>
 			<key>size</key>
@@ -19,6 +21,8 @@
 		</dict>
 		<key>Peperomia obtusifolia</key>
 		<dict>
+			<key>description</key>
+			<string></string>
 			<key>location</key>
 			<string></string>
 			<key>size</key>
@@ -32,6 +36,8 @@
 		</dict>
 		<key>Fiddle leaf figs</key>
 		<dict>
+			<key>description</key>
+			<string></string>
 			<key>location</key>
 			<string></string>
 			<key>size</key>
@@ -45,6 +51,8 @@
 		</dict>
 		<key>Zanzibar gem</key>
 		<dict>
+			<key>description</key>
+			<string></string>
 			<key>location</key>
 			<string></string>
 			<key>size</key>
@@ -58,19 +66,23 @@
 		</dict>
 		<key>Money tree</key>
 		<dict>
+			<key>description</key>
+			<string>Easy-going money trees make excellent indoor plants. This affordable pick from Just Add Ice comes in a 5-inch ceramic pot and will be about 15 inches tall when it reaches your doorstep. As the brand&apos;s name implies, all you need to do is add two ice cubes to the soil once a week and set it in a brightly lit room.</string>
 			<key>location</key>
-			<string></string>
+			<string>shaded indoors</string>
 			<key>size</key>
-			<string></string>
+			<string>height 40&apos;&apos; - 50&apos;&apos;</string>
 			<key>humidity</key>
-			<string></string>
+			<string>upto 73%</string>
 			<key>water</key>
-			<string></string>
+			<string>every 11 days</string>
 			<key>image</key>
 			<string>money</string>
 		</dict>
 		<key>Philodron brasil</key>
 		<dict>
+			<key>description</key>
+			<string></string>
 			<key>location</key>
 			<string></string>
 			<key>size</key>
