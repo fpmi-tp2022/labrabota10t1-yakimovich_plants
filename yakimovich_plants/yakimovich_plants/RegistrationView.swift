@@ -44,6 +44,12 @@ class RegistrationView: UIViewController{
                     plist?.setObject(password.text, forKey: login.text as! NSCopying)
                     plist?.write(toFile: path, atomically: true)
             resultLabel.text = "Registrate succesfully!"
+            
+            let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
+            let dictionary = NSMutableDictionary(contentsOfFile: path_plants)
+            let arr = [String]()
+            dictionary?.setObject(arr, forKey: "plants_\(login.text!)" as NSCopying)
+            dictionary?.write(toFile: path_plants, atomically: true)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let secondVC = storyboard.instantiateViewController(identifier: "ViewController")
                         

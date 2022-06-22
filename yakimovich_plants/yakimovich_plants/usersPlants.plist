@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   usersPlants.plist
-   yakimovich_plants
-
-   Created by Depravo on 22.06.2022.
-   Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>plants_s</key>
+	<array>
+		<string>Money tree</string>
+		<string>Bird of paradise</string>
+		<string>Zanzibar gem</string>
+		<string>Peperomia obtusifolia</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Fiddle leaf figs</string>
+		<string>Fiddle leaf figs</string>
+		<string>Philodron brasil</string>
+		<string>Zanzibar gem</string>
+		<string>Fiddle leaf figs</string>
+		<string>Bird of paradise</string>
+		<string>Money tree</string>
+		<string>Peperomia obtusifolia</string>
+		<string>Bird of paradise</string>
+		<string>Money tree</string>
+		<string>Philodron brasil</string>
+		<string>Fiddle leaf figs</string>
+		<string>Money tree</string>
+		<string>Money tree</string>
+		<string>Peperomia obtusifolia</string>
+		<string>Philodron brasil</string>
+	</array>
+</dict>
 </plist>

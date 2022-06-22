@@ -7,6 +7,7 @@
 
 import UIKit
 
+var current_user = String()
 
 
 class ViewController: UIViewController {
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
                     labelResult.text = "Incorrect login or password!"
                 }
                 else{
+                    current_user = login_scene1.text ?? "user"
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                                 let secondVC = storyboard.instantiateViewController(identifier: "ProfileView")
                                 

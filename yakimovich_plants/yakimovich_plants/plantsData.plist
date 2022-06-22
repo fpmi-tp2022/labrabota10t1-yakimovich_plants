@@ -2,6 +2,87 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>plantInfo</key>
+	<dict>
+		<key>Bird of paradise</key>
+		<dict>
+			<key>location</key>
+			<string></string>
+			<key>size</key>
+			<string></string>
+			<key>humidity</key>
+			<string></string>
+			<key>water</key>
+			<string></string>
+			<key>image</key>
+			<string>bird</string>
+		</dict>
+		<key>Peperomia obtusifolia</key>
+		<dict>
+			<key>location</key>
+			<string></string>
+			<key>size</key>
+			<string></string>
+			<key>humidity</key>
+			<string></string>
+			<key>water</key>
+			<string></string>
+			<key>image</key>
+			<string>peperomia</string>
+		</dict>
+		<key>Fiddle leaf figs</key>
+		<dict>
+			<key>location</key>
+			<string></string>
+			<key>size</key>
+			<string></string>
+			<key>humidity</key>
+			<string></string>
+			<key>water</key>
+			<string></string>
+			<key>image</key>
+			<string>fiddle</string>
+		</dict>
+		<key>Zanzibar gem</key>
+		<dict>
+			<key>location</key>
+			<string></string>
+			<key>size</key>
+			<string></string>
+			<key>humidity</key>
+			<string></string>
+			<key>water</key>
+			<string></string>
+			<key>image</key>
+			<string>zz</string>
+		</dict>
+		<key>Money tree</key>
+		<dict>
+			<key>location</key>
+			<string></string>
+			<key>size</key>
+			<string></string>
+			<key>humidity</key>
+			<string></string>
+			<key>water</key>
+			<string></string>
+			<key>image</key>
+			<string>money</string>
+		</dict>
+		<key>Philodron brasil</key>
+		<dict>
+			<key>location</key>
+			<string></string>
+			<key>size</key>
+			<string></string>
+			<key>humidity</key>
+			<string></string>
+			<key>water</key>
+			<string></string>
+			<key>image</key>
+			<string>philodron</string>
+		</dict>
+	</dict>
 	<key>plants</key>
 	<array>
 		<dict>

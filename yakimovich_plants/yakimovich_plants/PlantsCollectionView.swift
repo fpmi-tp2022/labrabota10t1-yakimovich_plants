@@ -27,12 +27,10 @@ class PlantsCollectionView: UIViewController {
             //arrange the frame according to your textfield height and image aspect
         imageView.frame = CGRect(x: 50, y: 5, width: 45, height: 20)
             imageView.contentMode = .scaleAspectFit
-        if (downLoads == 0){
 
         searchBarField.leftViewMode = .always
         searchBarField.leftView = imageView
-        }
-        downLoads += 1
+     
         view.addSubview(galleryCollectionView)
         galleryCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         galleryCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true

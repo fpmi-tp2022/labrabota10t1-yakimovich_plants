@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class GalleryCollectionView:   UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class MyPlantsCollectionView:   UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var cells = [PlantModel]()
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cells.count
@@ -26,18 +26,19 @@ class GalleryCollectionView:   UICollectionView, UICollectionViewDelegate, UICol
         return CGSize(width: 400, height: 100)
     }
      
-    
+    var selectedPlant = String()
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       print("hello")
+       print("hello2")
         myPlants.insert(cells[indexPath.row].plantName)
         let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
         let dictionary = NSMutableDictionary(contentsOfFile: path_plants)
         var arr = dictionary?.object(forKey: "plants_\(current_user)") as? [String]
         arr?.append(cells[indexPath.row].plantName)
+        selectedPlant = cells[indexPath.row].plantName
         dictionary?.setObject(arr, forKey: "plants_\(current_user)" as NSCopying)
         dictionary?.write(toFile: path_plants, atomically: true)
         
-        NotificationCenter.default.post(name: NSNotification.Name("loadNew"), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name("loadInfo"), object: nil)
       
    }
    
