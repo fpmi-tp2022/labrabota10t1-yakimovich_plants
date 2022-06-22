@@ -158,6 +158,7 @@
                                 <variation key="heightClass=regular-userInterfaceIdiom=mac-widthClass=compact" hidden="NO"/>
                                 <connections>
                                     <action selector="buttonSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwD-fG-h4F"/>
+                                    <action selector="viewMap:" destination="i6D-nj-Cit" eventType="touchUpInside" id="Md8-sX-Nfu"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iz5-32-hJC">
@@ -461,6 +462,38 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3150.7246376811595" y="135.9375"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="is5-hV-wW1">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="hXE-89-wlH" customClass="MapViewController" customModule="yakimovich_plants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jSv-n9-4Qi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uC3-27-SYw">
+                                <rect key="frame" x="20" y="194" width="374" height="471"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose city" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02c-1u-vQj">
+                                <rect key="frame" x="20" y="127" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTr-HT-Akt">
+                                <rect key="frame" x="136" y="694" width="143" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Selrct"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RXZ-Km-QSV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXy-wP-B9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3827.5362318840585" y="187.5"/>
         </scene>
     </scenes>
     <resources>

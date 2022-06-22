@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>plants_a</key>
+	<array/>
 	<key>plants_alex</key>
 	<array>
 		<string>Philodron brasil</string>
@@ -20,6 +22,10 @@
 		<string>Fiddle leaf figs</string>
 		<string>Peperomia obtusifolia</string>
 		<string>Peperomia obtusifolia</string>
+	</array>
+	<key>plants_b</key>
+	<array>
+		<string>Bird of paradise</string>
 	</array>
 	<key>plants_s</key>
 	<array>

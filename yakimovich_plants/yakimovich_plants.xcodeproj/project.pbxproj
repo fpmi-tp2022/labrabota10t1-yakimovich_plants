@@ -23,6 +23,8 @@
 		9E42392B28639B6500C80DD7 /* MyPlantsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42392A28639B6500C80DD7 /* MyPlantsCollectionView.swift */; };
 		9E42392F28639C9500C80DD7 /* MyPlantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42392E28639C9500C80DD7 /* MyPlantsCollectionViewCell.swift */; };
 		9E4239342863A2ED00C80DD7 /* PlantInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4239332863A2ED00C80DD7 /* PlantInfoView.swift */; };
+		9E42393B2863C8C700C80DD7 /* userCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E42393A2863C8C700C80DD7 /* userCity.plist */; };
+		9E42393F2863CB3F00C80DD7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42393E2863CB3F00C80DD7 /* MapViewController.swift */; };
 		9E431F0C286247FF00C69419 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E431F0B286247FF00C69419 /* RegistrationView.swift */; };
 		9E431F0F286259BD00C69419 /* PlantsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E431F0E286259BD00C69419 /* PlantsCollectionView.swift */; };
 		9E431F1328625D2600C69419 /* plantsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E431F1228625D2600C69419 /* plantsData.plist */; };
@@ -47,6 +49,8 @@
 		9E42392A28639B6500C80DD7 /* MyPlantsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsCollectionView.swift; sourceTree = "<group>"; };
 		9E42392E28639C9500C80DD7 /* MyPlantsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E4239332863A2ED00C80DD7 /* PlantInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoView.swift; sourceTree = "<group>"; };
+		9E42393A2863C8C700C80DD7 /* userCity.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = userCity.plist; sourceTree = "<group>"; };
+		9E42393E2863CB3F00C80DD7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9E431F0B286247FF00C69419 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		9E431F0E286259BD00C69419 /* PlantsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsCollectionView.swift; sourceTree = "<group>"; };
 		9E431F1228625D2600C69419 /* plantsData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = plantsData.plist; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				9E42392E28639C9500C80DD7 /* MyPlantsCollectionViewCell.swift */,
 				9E39E2DA286239D80017693A /* ProfileView.swift */,
 				9E4239332863A2ED00C80DD7 /* PlantInfoView.swift */,
+				9E42393A2863C8C700C80DD7 /* userCity.plist */,
+				9E42393E2863CB3F00C80DD7 /* MapViewController.swift */,
 			);
 			path = yakimovich_plants;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 			files = (
 				9E431F1328625D2600C69419 /* plantsData.plist in Resources */,
 				9E39E2CF286227E30017693A /* LaunchScreen.storyboard in Resources */,
+				9E42393B2863C8C700C80DD7 /* userCity.plist in Resources */,
 				9E39E2D828622E6B0017693A /* userData.plist in Resources */,
 				9E4239272863648400C80DD7 /* usersPlants.plist in Resources */,
 				9E39E2CC286227E30017693A /* Assets.xcassets in Resources */,
@@ -186,6 +193,7 @@
 				9E4239342863A2ED00C80DD7 /* PlantInfoView.swift in Sources */,
 				9E39E2DB286239D80017693A /* ProfileView.swift in Sources */,
 				9E431F0C286247FF00C69419 /* RegistrationView.swift in Sources */,
+				9E42393F2863CB3F00C80DD7 /* MapViewController.swift in Sources */,
 				9E431F0F286259BD00C69419 /* PlantsCollectionView.swift in Sources */,
 				9E39E2C2286227E10017693A /* SceneDelegate.swift in Sources */,
 				9E42392F28639C9500C80DD7 /* MyPlantsCollectionViewCell.swift in Sources */,

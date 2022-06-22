@@ -22,6 +22,15 @@ class RegistrationView: UIViewController{
         resultLabel.text = "";
         imageWelcome.image = UIImage(named: "welcome")
     }
+    @IBAction func viewMap(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let secondVC = storyboard.instantiateViewController(identifier: "MapViewController") as MapViewController
+                    
+                    secondVC.modalPresentationStyle = .fullScreen
+                    secondVC.modalTransitionStyle = .crossDissolve
+                    
+                    present(secondVC, animated: true, completion: nil)
+    }
     @IBAction func switchPage(_ sender: Any) {
         if pageSwitcher.selectedSegmentIndex == 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -43,6 +52,12 @@ class RegistrationView: UIViewController{
                     let plist = NSMutableDictionary(contentsOfFile: path)
                     plist?.setObject(password.text, forKey: login.text as! NSCopying)
                     plist?.write(toFile: path, atomically: true)
+            
+            let path_city = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userCity.plist"
+                        let plist2 = NSMutableDictionary(contentsOfFile: path_city)
+                        plist2?.setObject(address.text, forKey: login.text as! NSCopying)
+                        plist2?.write(toFile: path_city, atomically: true)
+            
             resultLabel.text = "Registrate succesfully!"
             
             let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
