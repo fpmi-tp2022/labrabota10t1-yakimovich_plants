@@ -60,7 +60,6 @@
 		9E39E2B3286227E10017693A = {
 			isa = PBXGroup;
 			children = (
-				9E4239262863648400C80DD7 /* usersPlants.plist */,
 				9E39E2BE286227E10017693A /* yakimovich_plants */,
 				9E39E2BD286227E10017693A /* Products */,
 			);
@@ -93,6 +92,7 @@
 				9E42391528633F1B00C80DD7 /* GalleryCollectionView.swift */,
 				9E4239182863410D00C80DD7 /* GalleryCollectionViewCell.swift */,
 				9E431F0E286259BD00C69419 /* PlantsCollectionView.swift */,
+				9E4239262863648400C80DD7 /* usersPlants.plist */,
 			);
 			path = yakimovich_plants;
 			sourceTree = "<group>";

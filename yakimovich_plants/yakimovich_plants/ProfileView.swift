@@ -13,6 +13,7 @@ import UIKit
 class ProfileView : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
+        pageSwitcher.selectedSegmentIndex = 0
        // Do any additional setup after loading the view.
     }
     

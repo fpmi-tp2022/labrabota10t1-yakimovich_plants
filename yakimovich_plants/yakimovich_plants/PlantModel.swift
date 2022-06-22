@@ -1,5 +1,8 @@
 import UIKit
 
+ var myPlants = Set <String>()
+
+
 struct PlantModel{
     var mainImage : UIImage
     var plantName: String
@@ -13,20 +16,22 @@ struct PlantModel{
         while(i < n){
             let imgName = data?[i].object(forKey: "image") as! String
             let name = data?[i].object(forKey: "name") as! String
-            guard let img = UIImage(named: imgName as! String) else { return [] }
-            let p1 = PlantModel(mainImage: img, plantName: name as! String)
-            arr.append(p1)
-            i += 1
+            if (myPlants.contains(name)){
+                i += 1
+                
+            }
+            else{
+                guard let img = UIImage(named: imgName as! String) else { return [] }
+                let p1 = PlantModel(mainImage: img, plantName: name as! String)
+                arr.append(p1)
+                i += 1
+            }
 
         }
         return arr
-        let image = UIImage(named: "f1")!
-        let f1 = PlantModel(mainImage: image, plantName: "ebannyi kust")
-        return [f1, f1, f1, f1, f1, f1, f1, f1, f1, f1]
+       
+       
     }
 }
 
-struct Constants{
-    static let upDistance: CGFloat = 10
-    
-}
+

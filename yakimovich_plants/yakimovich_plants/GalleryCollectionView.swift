@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class GalleryCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class GalleryCollectionView:   UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var cells = [PlantModel]()
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cells.count
@@ -25,8 +25,14 @@ class GalleryCollectionView: UICollectionView, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView : UICollectionView, layout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         return CGSize(width: 400, height: 100)
     }
+     
     
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       print("hello")
+        myPlants.insert(cells[indexPath.row].plantName)
+        NotificationCenter.default.post(name: NSNotification.Name("loadNew"), object: nil)
+      
+   }
    
     init(){
         let layout = UICollectionViewFlowLayout()

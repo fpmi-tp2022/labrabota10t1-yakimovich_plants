@@ -260,6 +260,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WIG-8l-7Ma"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                     </view>
                     <connections>
                         <outlet property="pageSwitcher" destination="ILj-18-TAa" id="ntO-yJ-1EC"/>
