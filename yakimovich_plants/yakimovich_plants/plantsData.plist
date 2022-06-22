@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>plants</key>
+	<array>
+		<dict>
+			<key>image</key>
+			<string>philodron</string>
+			<key>name</key>
+			<string>Philodron brasil</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>money</string>
+			<key>name</key>
+			<string>Money tree</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>fiddle</string>
+			<key>name</key>
+			<string>Fiddle leaf figs</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>zz</string>
+			<key>name</key>
+			<string>Zanzibar gem</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>peperomia</string>
+			<key>name</key>
+			<string>Peperomia obtusifolia</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>bird</string>
+			<key>name</key>
+			<string>Bird of paradise</string>
+		</dict>
+	</array>
+</dict>
+</plist>

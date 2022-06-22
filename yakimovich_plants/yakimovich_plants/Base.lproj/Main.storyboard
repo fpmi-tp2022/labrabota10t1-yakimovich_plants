@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -195,16 +196,83 @@
                     <view key="view" contentMode="scaleToFill" id="Jht-DE-uYX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wvx-ko-2A0">
+                                <rect key="frame" x="20" y="806" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="my plants"/>
+                                    <segment title="add plant"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchPage:" destination="lEn-Hn-6Bc" eventType="valueChanged" id="Qvv-e8-Uhh"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Mev-59-9f0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="pageSwitcher" destination="wvx-ko-2A0" id="uEL-zM-6pZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxA-ec-moz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="123"/>
+            <point key="canvasLocation" x="1885.5072463768117" y="122.54464285714285"/>
+        </scene>
+        <!--Plants Collection View-->
+        <scene sceneID="YQD-Mz-B68">
+            <objects>
+                <viewController storyboardIdentifier="PlantsCollectionView" id="Hqp-Yu-IeC" customClass="PlantsCollectionView" customModule="yakimovich_plants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r7S-Sw-yi6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ILj-18-TAa">
+                                <rect key="frame" x="20" y="806" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="my plants"/>
+                                    <segment title="add plant"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchPage:" destination="Hqp-Yu-IeC" eventType="valueChanged" id="FUT-kv-hK0"/>
+                                    <action selector="switchPage:" destination="lEn-Hn-6Bc" eventType="valueChanged" id="mga-lG-OPf"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search plants" textAlignment="natural" minimumFontSize="17" disabledBackground="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c7u-Qk-ABW">
+                                <rect key="frame" x="20" y="119" width="337" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <imageReference key="background" image="magnifyingglass" catalog="system" symbolScale="small" renderingMode="template"/>
+                                <connections>
+                                    <action selector="searcBar:" destination="Hqp-Yu-IeC" eventType="editingDidEnd" id="6sf-CO-zvf"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yakimovich plants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HM-vM-Ha2">
+                                <rect key="frame" x="20" y="62" width="297" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WIG-8l-7Ma"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageSwitcher" destination="ILj-18-TAa" id="ntO-yJ-1EC"/>
+                        <outlet property="searchBarField" destination="c7u-Qk-ABW" id="k36-FM-OjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qF-vp-4hl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484.057971014493" y="122.54464285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
