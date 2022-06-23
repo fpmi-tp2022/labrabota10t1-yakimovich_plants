@@ -3,6 +3,10 @@
 
 ## Installation
 
+Clone project from git using git clone command
+Run project
+Sign up and enjoy!
+
 ## Usage
 Create account, add information about your plants and app will help you to care for them!
 
