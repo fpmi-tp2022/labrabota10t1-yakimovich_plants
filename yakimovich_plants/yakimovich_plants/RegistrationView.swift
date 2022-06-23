@@ -9,6 +9,11 @@ import Foundation
 
 import UIKit
 
+var loginSave = String()
+var passwordSave = String()
+var rpasswordSave = String()
+var citySave = String()
+
 class RegistrationView: UIViewController{
     @IBOutlet weak var imageWelcome: UIImageView!
     @IBOutlet weak var login: UITextField!
@@ -21,8 +26,16 @@ class RegistrationView: UIViewController{
         super.viewDidLoad()
         resultLabel.text = "";
         imageWelcome.image = UIImage(named: "welcome")
+        login.text = loginSave
+        password.text = passwordSave
+        rpassword.text = rpasswordSave
+        address.text = citySave
     }
     @IBAction func viewMap(_ sender: Any) {
+        loginSave = login.text ?? ""
+        passwordSave = password.text ?? ""
+        rpasswordSave = rpassword.text ?? ""
+        citySave = address.text ?? ""
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let secondVC = storyboard.instantiateViewController(identifier: "MapViewController") as MapViewController
                     
@@ -59,7 +72,10 @@ class RegistrationView: UIViewController{
                         plist2?.write(toFile: path_city, atomically: true)
             
             resultLabel.text = "Registrate succesfully!"
-            
+            loginSave = ""
+            passwordSave = ""
+            rpasswordSave = ""
+            citySave = ""
             let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
             let dictionary = NSMutableDictionary(contentsOfFile: path_plants)
             let arr = [String]()
