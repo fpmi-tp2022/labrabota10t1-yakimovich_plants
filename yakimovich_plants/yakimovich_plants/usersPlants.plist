@@ -5,7 +5,10 @@
 	<key>plants_a</key>
 	<array/>
 	<key>plants_ad</key>
-	<array/>
+	<array>
+		<string>Money tree</string>
+		<string>Zanzibar gem</string>
+	</array>
 	<key>plants_alex</key>
 	<array>
 		<string>Philodron brasil</string>

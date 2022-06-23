@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 
-
+var userCity = String()
 class ProfileView : UIViewController{
+    
+    private var weatherVM = WeatherViewModel()
     @objc  func loadInfo(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let secondVC = storyboard.instantiateViewController(identifier: "PlantInfoView") as PlantInfoView
@@ -35,6 +37,15 @@ class ProfileView : UIViewController{
             myPlants.insert(arr![i])
             i += 1
         }
+        
+        let path_city = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userCity.plist"
+                    let plist2 = NSMutableDictionary(contentsOfFile: path_city)
+        userCity = plist2?.object(forKey: current_user) as! String
+        
+        self.weatherVM.fetchWeather(city: userCity)
+        sleep(1)
+        weather.text  = "Temperature: " + String(Int(weatherVM.temperature)) + "ºC"
+        
         view.addSubview(galleryCollectionView)
         galleryCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         galleryCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
