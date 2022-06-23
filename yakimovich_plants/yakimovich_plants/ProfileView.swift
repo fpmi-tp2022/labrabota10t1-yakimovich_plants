@@ -11,6 +11,18 @@ import UIKit
 
 var userCity = String()
 class ProfileView : UIViewController{
+    @IBOutlet weak var checkProgress: UIButton!
+    @IBAction func checkIt(_ sender: Any) {
+        collectedPlants = myPlants.count
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let secondVC = storyboard.instantiateViewController(identifier: "MyProgressView")
+                    
+                    secondVC.modalPresentationStyle = .fullScreen
+                    secondVC.modalTransitionStyle = .crossDissolve
+                    
+                    present(secondVC, animated: true, completion: nil)
+        
+    }
     
     private var weatherVM = WeatherViewModel()
     @objc  func loadInfo(){
@@ -50,7 +62,7 @@ class ProfileView : UIViewController{
         galleryCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         galleryCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         galleryCollectionView.topAnchor.constraint(equalTo: weather.bottomAnchor, constant: 10).isActive = true
-        galleryCollectionView.heightAnchor.constraint(equalToConstant: 600).isActive = true
+        galleryCollectionView.heightAnchor.constraint(equalToConstant: 500).isActive = true
         galleryCollectionView.set(cells: PlantModel.unfetchPlants())
         NotificationCenter.default.addObserver(self, selector: #selector(loadInfo), name: NSNotification.Name("loadInfo"), object: nil)
         //dictionary?.setObject(arr, forKey: "plants_\(current_user)" as NSCopying)

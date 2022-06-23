@@ -32,6 +32,7 @@
 		9E46E6D328649419003B5AF9 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46E6D228649418003B5AF9 /* WeatherService.swift */; };
 		9E46E6D62864941E003B5AF9 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46E6D52864941D003B5AF9 /* WeatherResponse.swift */; };
 		9E46E6D928649421003B5AF9 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46E6D828649420003B5AF9 /* URL+Extensions.swift */; };
+		9E46E6DF28649E45003B5AF9 /* MyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E46E6DE28649E44003B5AF9 /* MyProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		9E46E6D228649418003B5AF9 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		9E46E6D52864941D003B5AF9 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		9E46E6D828649420003B5AF9 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		9E46E6DE28649E44003B5AF9 /* MyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				9E46E6D52864941D003B5AF9 /* WeatherResponse.swift */,
 				9E46E6CF2864940E003B5AF9 /* WeatherViewModel.swift */,
 				9E46E6D828649420003B5AF9 /* URL+Extensions.swift */,
+				9E46E6DE28649E44003B5AF9 /* MyProgressView.swift */,
 				9E46E6D228649418003B5AF9 /* WeatherService.swift */,
 				9E39E2C1286227E10017693A /* SceneDelegate.swift */,
 				9E39E2BF286227E10017693A /* AppDelegate.swift */,
@@ -213,6 +216,7 @@
 				9E46E6D02864940E003B5AF9 /* WeatherViewModel.swift in Sources */,
 				9E46E6D928649421003B5AF9 /* URL+Extensions.swift in Sources */,
 				9E42392F28639C9500C80DD7 /* MyPlantsCollectionViewCell.swift in Sources */,
+				9E46E6DF28649E45003B5AF9 /* MyProgressView.swift in Sources */,
 				9E42392B28639B6500C80DD7 /* MyPlantsCollectionView.swift in Sources */,
 				9E4239192863410D00C80DD7 /* GalleryCollectionViewCell.swift in Sources */,
 				9E39E2CA286227E10017693A /* yakimovich_plants.xcdatamodeld in Sources */,
