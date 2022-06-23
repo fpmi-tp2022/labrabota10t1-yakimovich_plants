@@ -55,12 +55,20 @@ class RegistrationView: UIViewController{
         }
     }
     @IBAction func signUpClick(_ sender: Any) {
-        if login.text == "" || password.text == "" || rpassword.text != password.text || address.text == "" {
+        //let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
+        let path = "/Users/depravo/lab10/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
+        let plist = NSMutableDictionary(contentsOfFile: path)
+        
+        let pass = plist?.value(forKey: login.text!)
+
+        if pass != nil {
+            resultLabel.text = NSLocalizedString("Login unavailable!", comment: "")
+        }
+        else if login.text == "" || password.text == "" || rpassword.text != password.text || address.text == "" {
             resultLabel.text = NSLocalizedString("Incorrect data!", comment: "")
         }
         else{
-        let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
-                    let plist = NSMutableDictionary(contentsOfFile: path)
+                 let plist = NSMutableDictionary(contentsOfFile: path)
                     plist?.setObject(password.text, forKey: login.text as! NSCopying)
                     plist?.write(toFile: path, atomically: true)
             
