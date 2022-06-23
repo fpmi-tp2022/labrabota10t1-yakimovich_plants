@@ -11,6 +11,7 @@ import MapKit
 
 
 class MapViewController : UIViewController {
+    @IBOutlet weak var confirmButton: UIButton!
     var locationManager = CLLocationManager()
 
     @IBOutlet weak var map: MKMapView!
@@ -19,7 +20,7 @@ class MapViewController : UIViewController {
         setupManager()
         checkAutorization()
         // originalTopMargin = topMarginConstraint.constant
-        
+        confirmButton.setTitle(NSLocalizedString("Confirm", comment: ""), for: .normal)
     
         
     }

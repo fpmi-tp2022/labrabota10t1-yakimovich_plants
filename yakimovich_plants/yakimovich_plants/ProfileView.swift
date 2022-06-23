@@ -37,7 +37,9 @@ class ProfileView : UIViewController{
     }
     private var galleryCollectionView = MyPlantsCollectionView()
 
+    @IBOutlet weak var titleLabel1: UILabel!
     @IBOutlet weak var weather: UILabel!
+    @IBOutlet weak var checkButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         pageSwitcher.selectedSegmentIndex = 0
@@ -69,6 +71,12 @@ class ProfileView : UIViewController{
        // dictionary?.write(toFile: path_plants, atomically: true)
         
        // Do any additional setup after loading the view.
+        pageSwitcher.setTitle(NSLocalizedString("my plants", comment: ""), forSegmentAt: 0)
+        pageSwitcher.setTitle(NSLocalizedString("add plant", comment: ""), forSegmentAt: 1)
+        
+        titleLabel1.text = NSLocalizedString("My plants", comment: "")
+        weather.text = NSLocalizedString("weather", comment: "")
+        checkButton.setTitle(NSLocalizedString("Check progress!", comment: ""), for: .normal)
     }
     
     @IBOutlet weak var pageSwitcher: UISegmentedControl!

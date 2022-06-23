@@ -29,6 +29,7 @@ class ViewController: UIViewController {
             // zagruzka
         }
     }
+    @IBOutlet weak var signButton: UIButton!
     @IBAction func buttonSignIn(_ sender: Any) {
         let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
                 print(path)
@@ -56,13 +57,25 @@ class ViewController: UIViewController {
                 }
         // zagruzka
     }
+    @IBAction func signButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         labelResult.text = "";
         imageStart.image = UIImage(named: "welcome")
         // Do any additional setup after loading the view.
+        switcherLabel.setTitle(NSLocalizedString("sign in", comment: ""), forSegmentAt: 0)
+        switcherLabel.setTitle(NSLocalizedString("sign up", comment: ""), forSegmentAt: 1)
+        signButton.setTitle(NSLocalizedString("sign in", comment: ""), for: .normal)
+        login_scene1.placeholder = NSLocalizedString("login", comment: "")
+        password_scene1.placeholder = NSLocalizedString("password", comment: "")
     }
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
+    }
 
 }
 

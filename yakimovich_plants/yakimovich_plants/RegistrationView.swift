@@ -19,8 +19,10 @@ class RegistrationView: UIViewController{
     @IBOutlet weak var login: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var rpassword: UITextField!
+    @IBOutlet weak var viewMapButton: UIButton!
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var pageSwitcher: UISegmentedControl!
+    @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var resultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,13 @@ class RegistrationView: UIViewController{
         password.text = passwordSave
         rpassword.text = rpasswordSave
         address.text = citySave
+            pageSwitcher.setTitle(NSLocalizedString("sign in", comment: ""), forSegmentAt: 0)
+            pageSwitcher.setTitle(NSLocalizedString("sign up", comment: ""), forSegmentAt: 1)
+            signUpButton.setTitle(NSLocalizedString("sign up", comment: ""), for: .normal)
+            viewMapButton.setTitle(NSLocalizedString("view map", comment: ""), for: .normal)
+            login.placeholder = NSLocalizedString("login", comment: "")
+            password.placeholder = NSLocalizedString("password", comment: "")
+            rpassword.placeholder = NSLocalizedString("repeat password", comment: "")
     }
     @IBAction func viewMap(_ sender: Any) {
         loginSave = login.text ?? ""
@@ -57,11 +66,18 @@ class RegistrationView: UIViewController{
         }
     }
     @IBAction func signUpClick(_ sender: Any) {
-        if login.text == "" || password.text == "" || rpassword.text != password.text || address.text == "" {
-            resultLabel.text = "Incorrect data!"
+        let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
+        let plist = NSMutableDictionary(contentsOfFile: path)
+        
+        let pass = plist?.value(forKey: login.text!)
+
+        if pass != nil {
+            resultLabel.text = NSLocalizedString("Login unavailable!", comment: "")
+        }
+        else if login.text == "" || password.text == "" || rpassword.text != password.text || address.text == "" {
+            resultLabel.text = NSLocalizedString("Incorrect data!", comment: "")
         }
         else{
-        let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
                     let plist = NSMutableDictionary(contentsOfFile: path)
                     plist?.setObject(password.text, forKey: login.text as! NSCopying)
                     plist?.write(toFile: path, atomically: true)

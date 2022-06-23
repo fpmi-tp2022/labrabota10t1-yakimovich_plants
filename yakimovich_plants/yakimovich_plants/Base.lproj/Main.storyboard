@@ -76,6 +76,7 @@
                         <outlet property="labelResult" destination="Z7V-tL-bC9" id="Bc5-p0-gSc"/>
                         <outlet property="login_scene1" destination="BYv-zD-40p" id="udR-O2-dyw"/>
                         <outlet property="password_scene1" destination="rIW-Qv-85P" id="I4i-BW-940"/>
+                        <outlet property="signButton" destination="erk-JZ-b4u" id="O7b-aH-oWV"/>
                         <outlet property="switcherLabel" destination="emo-MS-xRy" id="CSb-1Y-rpi"/>
                     </connections>
                 </viewController>
@@ -184,6 +185,8 @@
                         <outlet property="password" destination="Wca-zJ-h9s" id="JZ2-w4-vIc"/>
                         <outlet property="resultLabel" destination="cAc-CK-BTR" id="k47-rK-DlD"/>
                         <outlet property="rpassword" destination="HpS-CG-aEw" id="6kN-1t-c4a"/>
+                        <outlet property="signUpButton" destination="Enx-ha-080" id="fjV-rC-Kvd"/>
+                        <outlet property="viewMapButton" destination="EkP-vz-U6n" id="Xin-dr-68i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYe-XY-kcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -239,9 +242,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="checkButton" destination="4ES-i7-5sn" id="fUZ-HS-fhA"/>
                         <outlet property="checkProgress" destination="4ES-i7-5sn" id="ywg-L9-RKn"/>
                         <outlet property="pageSwitcher" destination="wvx-ko-2A0" id="uEL-zM-6pZ"/>
-                        <outlet property="weather" destination="Cld-oY-EfK" id="IQV-mV-EpL"/>
+                        <outlet property="titleLabel1" destination="fuJ-c3-wo8" id="CzK-Sd-AzN"/>
+                        <outlet property="weather" destination="Cld-oY-EfK" id="5Vp-tF-A6e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxA-ec-moz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -293,6 +298,7 @@
                     <connections>
                         <outlet property="pageSwitcher" destination="ILj-18-TAa" id="ntO-yJ-1EC"/>
                         <outlet property="searchBarField" destination="c7u-Qk-ABW" id="k36-FM-OjI"/>
+                        <outlet property="titleLabel" destination="0HM-vM-Ha2" id="Kc8-j7-Kxd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qF-vp-4hl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -394,13 +400,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quQ-KX-yVQ">
-                                <rect key="frame" x="25" y="708" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKL-0k-DPt">
                                 <rect key="frame" x="304" y="707" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -444,6 +443,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quQ-KX-yVQ">
+                                <rect key="frame" x="25" y="708" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="liI-gK-Nfl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -453,16 +459,21 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="careGuide" destination="y88-IV-pMT" id="wQ8-lo-eM1"/>
                         <outlet property="descriptionLabel" destination="9L7-3K-LPd" id="81v-fX-01i"/>
                         <outlet property="humidity" destination="wel-nW-He7" id="OpR-21-1bN"/>
+                        <outlet property="humidityLabel" destination="cSr-9w-KDt" id="dGd-8q-esa"/>
                         <outlet property="humidityReq" destination="j9j-lu-MsR" id="apF-Sp-EVW"/>
                         <outlet property="img" destination="Qky-8d-7N3" id="BM6-Ar-YbI"/>
                         <outlet property="location" destination="2En-uR-4b6" id="FwT-zO-KNK"/>
+                        <outlet property="locationLabel" destination="BKL-0k-DPt" id="YVa-2e-GZ8"/>
                         <outlet property="locationReq" destination="IHk-1A-AOs" id="sCK-J1-25A"/>
                         <outlet property="plantNameLabel" destination="f1Q-mn-gmo" id="Ecz-Sq-NbY"/>
                         <outlet property="size" destination="1UA-H5-8Cv" id="aAe-b8-eeY"/>
+                        <outlet property="sizeLabel" destination="Hnu-fz-dDg" id="Ljv-YP-l7L"/>
                         <outlet property="sizeReq" destination="YLF-bm-s7J" id="Fbs-oZ-1mV"/>
                         <outlet property="water" destination="EQ7-wm-UdZ" id="PGa-dq-qOP"/>
+                        <outlet property="waterLabel" destination="quQ-KX-yVQ" id="7nm-vT-JSj"/>
                         <outlet property="waterReq" destination="vAX-W5-ab7" id="4di-7W-Sin"/>
                     </connections>
                 </viewController>
@@ -507,6 +518,7 @@
                     </view>
                     <connections>
                         <outlet property="cityField" destination="02c-1u-vQj" id="d40-AM-WlS"/>
+                        <outlet property="confirmButton" destination="rTr-HT-Akt" id="7u9-sS-tKF"/>
                         <outlet property="map" destination="uC3-27-SYw" id="GWD-NZ-0Wo"/>
                     </connections>
                 </viewController>

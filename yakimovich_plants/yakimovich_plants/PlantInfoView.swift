@@ -20,6 +20,11 @@ class PlantInfoView : UIViewController{
                     present(secondVC, animated: true, completion: nil)
     }
    
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var waterLabel: UILabel!
+    @IBOutlet weak var careGuide: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var water: UILabel!
@@ -43,11 +48,11 @@ class PlantInfoView : UIViewController{
         let locationText =  dictPlant?.object(forKey:     "location") as! String
         
         img.image = UIImage(named: imgName )
-        descriptionLabel.text = dscr
-        waterReq.text = waterText
-        humidityReq.text = humidityText
-        sizeReq.text = sizeText
-        locationReq.text = locationText
+        descriptionLabel.text = NSLocalizedString(dscr, comment: "")
+        waterReq.text = NSLocalizedString(waterText, comment: "")
+        humidityReq.text = NSLocalizedString(humidityText, comment: "")
+        sizeReq.text = NSLocalizedString(sizeText, comment: "")
+        locationReq.text = NSLocalizedString(locationText, comment: "")
         
         water.layer.masksToBounds = true
         water.text = ""
@@ -65,6 +70,11 @@ class PlantInfoView : UIViewController{
         size.text = ""
         size.layer.cornerRadius = 10
         
+        careGuide.text = NSLocalizedString("Care guide", comment: "")
+        waterLabel.text = NSLocalizedString("Water", comment: "")
+        humidityLabel.text = NSLocalizedString("Humidity", comment: "")
+        sizeLabel.text = NSLocalizedString("Size", comment: "")
+        locationLabel.text = NSLocalizedString("Location", comment: "")
     }
     @IBOutlet weak var locationReq: UILabel!
     @IBOutlet weak var sizeReq: UILabel!
