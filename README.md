@@ -1,14 +1,16 @@
 ## Description
-"name of app" is app, that helps you to look after plants and control their state. 
+"Yakimovich plants" is app, that helps you to look after plants and control their state. Also you compete with Yakimovich in collecting plants!
+
 ## Installation
 
 ## Usage
 Create account, add information about your plants and app will help you to care for them!
 
 ## Contributing
-Soroka Alexander:
 
-Drozdova Julia: 
+Soroka Alexander: localization, development of maps, weather, progress part
 
-Gordey Ilya:
+Drozdova Julia: development of inner functions
+
+Gordey Ilya: development of data bases, interface, presentation
 
