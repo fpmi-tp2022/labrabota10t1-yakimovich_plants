@@ -32,6 +32,11 @@
 		<string>Peperomia obtusifolia</string>
 		<string>Peperomia obtusifolia</string>
 	</array>
+	<key>plants_alexander</key>
+	<array>
+		<string>Money tree</string>
+		<string>Zanzibar gem</string>
+	</array>
 	<key>plants_b</key>
 	<array>
 		<string>Bird of paradise</string>
@@ -40,6 +45,16 @@
 		<string>Zanzibar gem</string>
 		<string>Bird of paradise</string>
 		<string>Fiddle leaf figs</string>
+		<string>Money tree</string>
+		<string>Peperomia obtusifolia</string>
+		<string>Philodron brasil</string>
+		<string>Fiddle leaf figs</string>
+		<string>Philodron brasil</string>
+	</array>
+	<key>plants_juliett</key>
+	<array>
+		<string>Fiddle leaf figs</string>
+		<string>Zanzibar gem</string>
 	</array>
 	<key>plants_s</key>
 	<array>

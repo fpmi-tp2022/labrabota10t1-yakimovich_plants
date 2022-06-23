@@ -58,6 +58,7 @@ class ProfileView : UIViewController{
         
         self.weatherVM.fetchWeather(city: userCity)
         sleep(1)
+        print(userCity)
         weather.text  = "Temperature: " + String(Int(weatherVM.temperature)) + "ºC"
         
         view.addSubview(galleryCollectionView)
@@ -75,7 +76,7 @@ class ProfileView : UIViewController{
         pageSwitcher.setTitle(NSLocalizedString("add plant", comment: ""), forSegmentAt: 1)
         
         titleLabel1.text = NSLocalizedString("My plants", comment: "")
-        weather.text = NSLocalizedString("weather", comment: "")
+        
         checkButton.setTitle(NSLocalizedString("Check progress!", comment: ""), for: .normal)
     }
     

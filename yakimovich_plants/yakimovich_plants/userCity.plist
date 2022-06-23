@@ -4,7 +4,11 @@
 <dict>
 	<key>ad</key>
 	<string>San Francisco</string>
+	<key>alexander</key>
+	<string>Minsk</string>
 	<key>b</key>
 	<string>b</string>
+	<key>juliett</key>
+	<string>Сан-Франциско</string>
 </dict>
 </plist>

@@ -219,7 +219,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cld-oY-EfK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature: 18 ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cld-oY-EfK">
                                 <rect key="frame" x="20" y="118" width="355" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
@@ -246,7 +246,7 @@
                         <outlet property="checkProgress" destination="4ES-i7-5sn" id="ywg-L9-RKn"/>
                         <outlet property="pageSwitcher" destination="wvx-ko-2A0" id="uEL-zM-6pZ"/>
                         <outlet property="titleLabel1" destination="fuJ-c3-wo8" id="CzK-Sd-AzN"/>
-                        <outlet property="weather" destination="Cld-oY-EfK" id="5Vp-tF-A6e"/>
+                        <outlet property="weather" destination="Cld-oY-EfK" id="0qJ-xE-Ujb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxA-ec-moz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
