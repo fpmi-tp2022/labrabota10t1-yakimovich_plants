@@ -18,7 +18,7 @@ class GalleryCollectionView:   UICollectionView, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(withReuseIdentifier: GalleryCollectionViewCell.reuseId, for: indexPath) as! GalleryCollectionViewCell
         cell.mainImageView.image = cells[indexPath.row].mainImage
-        cell.nameLabel.text = cells[indexPath.row].plantName
+        cell.nameLabel.text = NSLocalizedString(cells[indexPath.row].plantName, comment: "")
         return cell
         
     }

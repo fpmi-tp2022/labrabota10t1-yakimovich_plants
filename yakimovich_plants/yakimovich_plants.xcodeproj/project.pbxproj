@@ -16,6 +16,7 @@
 		9E39E2CF286227E30017693A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E39E2CD286227E30017693A /* LaunchScreen.storyboard */; };
 		9E39E2D828622E6B0017693A /* userData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E39E2D728622E6B0017693A /* userData.plist */; };
 		9E39E2DB286239D80017693A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E39E2DA286239D80017693A /* ProfileView.swift */; };
+		9E41136228646FB3009CC1FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E41136428646FB3009CC1FE /* Localizable.strings */; };
 		9E42391628633F1B00C80DD7 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42391528633F1B00C80DD7 /* GalleryCollectionView.swift */; };
 		9E4239192863410D00C80DD7 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4239182863410D00C80DD7 /* GalleryCollectionViewCell.swift */; };
 		9E4239222863531500C80DD7 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4239212863531500C80DD7 /* PlantModel.swift */; };
@@ -42,6 +43,10 @@
 		9E39E2D0286227E30017693A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E39E2D728622E6B0017693A /* userData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = userData.plist; sourceTree = "<group>"; };
 		9E39E2DA286239D80017693A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9E41135C28646E00009CC1FE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		9E41135D28646E00009CC1FE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9E41136328646FB3009CC1FE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9E41136628646FB6009CC1FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9E42391528633F1B00C80DD7 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
 		9E4239182863410D00C80DD7 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E4239212863531500C80DD7 /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
@@ -54,6 +59,9 @@
 		9E431F0B286247FF00C69419 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		9E431F0E286259BD00C69419 /* PlantsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsCollectionView.swift; sourceTree = "<group>"; };
 		9E431F1228625D2600C69419 /* plantsData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = plantsData.plist; sourceTree = "<group>"; };
+		9E4531552864A21000255DDF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		9E4531562864A21000255DDF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9E4531572864A21000255DDF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 				9E4239332863A2ED00C80DD7 /* PlantInfoView.swift */,
 				9E42393A2863C8C700C80DD7 /* userCity.plist */,
 				9E42393E2863CB3F00C80DD7 /* MapViewController.swift */,
+				9E41136428646FB3009CC1FE /* Localizable.strings */,
 			);
 			path = yakimovich_plants;
 			sourceTree = "<group>";
@@ -153,6 +162,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				uk,
 			);
 			mainGroup = 9E39E2B3286227E10017693A;
 			productRefGroup = 9E39E2BD286227E10017693A /* Products */;
@@ -174,6 +185,7 @@
 				9E42393B2863C8C700C80DD7 /* userCity.plist in Resources */,
 				9E39E2D828622E6B0017693A /* userData.plist in Resources */,
 				9E4239272863648400C80DD7 /* usersPlants.plist in Resources */,
+				9E41136228646FB3009CC1FE /* Localizable.strings in Resources */,
 				9E39E2CC286227E30017693A /* Assets.xcassets in Resources */,
 				9E39E2C7286227E10017693A /* Main.storyboard in Resources */,
 			);
@@ -210,6 +222,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E39E2C6286227E10017693A /* Base */,
+				9E41135C28646E00009CC1FE /* ru */,
+				9E4531552864A21000255DDF /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -218,8 +232,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E39E2CE286227E30017693A /* Base */,
+				9E41135D28646E00009CC1FE /* ru */,
+				9E4531562864A21000255DDF /* uk */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9E41136428646FB3009CC1FE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E41136328646FB3009CC1FE /* ru */,
+				9E41136628646FB6009CC1FE /* en */,
+				9E4531572864A21000255DDF /* uk */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -229,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -290,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -348,6 +376,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = yakimovich_plants/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = yakimovich_plants/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

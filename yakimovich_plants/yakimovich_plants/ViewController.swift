@@ -12,6 +12,7 @@ var current_user = String()
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var signButton: UIButton!
     @IBOutlet weak var login_scene1: UITextField!
     @IBOutlet weak var switcherLabel: UISegmentedControl!
     @IBOutlet weak var labelResult: UILabel!
@@ -30,18 +31,20 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func buttonSignIn(_ sender: Any) {
-        let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
-                print(path)
+        //let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
+        let path = "/Users/depravo/lab10/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
+        
+        print(path)
                 let plist = NSMutableDictionary(contentsOfFile: path)
-                
+
                 let pass = plist?.value(forKey: login_scene1.text!)
 
                 if (pass == nil){
-                    labelResult.text = "No such user!"
+                    labelResult.text = NSLocalizedString("No such user!", comment: "")
                  
                 }
                 else if (pass as! String != password_scene1.text){
-                    labelResult.text = "Incorrect login or password!"
+                    labelResult.text = NSLocalizedString("Incorrect login or password!", comment: "")
                 }
                 else{
                     current_user = login_scene1.text ?? "user"
@@ -61,8 +64,20 @@ class ViewController: UIViewController {
         labelResult.text = "";
         imageStart.image = UIImage(named: "welcome")
         // Do any additional setup after loading the view.
+        switcherLabel.setTitle(NSLocalizedString("sign in", comment: ""), forSegmentAt: 0)
+        switcherLabel.setTitle(NSLocalizedString("sign up", comment: ""), forSegmentAt: 1)
+        signButton.setTitle(NSLocalizedString("sign in", comment: ""), for: .normal)
+        login_scene1.placeholder = NSLocalizedString("login", comment: "")
+        password_scene1.placeholder = NSLocalizedString("password", comment: "")
+        
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
+    }
 
 }
 

@@ -26,10 +26,16 @@ class PlantInfoView : UIViewController{
     @IBOutlet weak var humidity: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var size: UILabel!
+    
+    @IBOutlet weak var careGuide: UILabel!
+    @IBOutlet weak var waterLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         plantName = selectedPlant
-        plantNameLabel.text = plantName
+        plantNameLabel.text = NSLocalizedString(plantName, comment: "")
         let path = Bundle.main.path(forResource: "plantsData", ofType: ".plist")
         let dictionary = NSDictionary(contentsOfFile: path!)
         let data = dictionary?.object(forKey: "plantInfo") as? NSDictionary
@@ -43,11 +49,11 @@ class PlantInfoView : UIViewController{
         let locationText =  dictPlant?.object(forKey:     "location") as! String
         
         img.image = UIImage(named: imgName )
-        descriptionLabel.text = dscr
-        waterReq.text = waterText
-        humidityReq.text = humidityText
-        sizeReq.text = sizeText
-        locationReq.text = locationText
+        descriptionLabel.text = NSLocalizedString(dscr, comment: "")
+        waterReq.text = NSLocalizedString(waterText, comment: "")
+        humidityReq.text = NSLocalizedString(humidityText, comment: "")
+        sizeReq.text = NSLocalizedString(sizeText, comment: "")
+        locationReq.text = NSLocalizedString(locationText, comment: "")
         
         water.layer.masksToBounds = true
         water.text = ""
@@ -64,6 +70,12 @@ class PlantInfoView : UIViewController{
         size.layer.masksToBounds = true
         size.text = ""
         size.layer.cornerRadius = 10
+        
+        careGuide.text = NSLocalizedString("Care guide", comment: "")
+        waterLabel.text = NSLocalizedString("Water", comment: "")
+        humidityLabel.text = NSLocalizedString("Humidity", comment: "")
+        sizeLabel.text = NSLocalizedString("Size", comment: "")
+        locationLabel.text = NSLocalizedString("Location", comment: "")
         
     }
     @IBOutlet weak var locationReq: UILabel!

@@ -18,6 +18,7 @@ class PlantsCollectionView: UIViewController {
                     
                     present(secondVC, animated: true, completion: nil)
     }
+    @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(loadNew), name: NSNotification.Name("loadNew"), object: nil)
@@ -38,6 +39,10 @@ class PlantsCollectionView: UIViewController {
         galleryCollectionView.heightAnchor.constraint(equalToConstant: 600).isActive = true
         galleryCollectionView.set(cells: PlantModel.fetchPlants())
         // Do any additional setup after loading the view.
+        pageSwitcher.setTitle(NSLocalizedString("my plants", comment: ""), forSegmentAt: 0)
+        pageSwitcher.setTitle(NSLocalizedString("add plant", comment: ""), forSegmentAt: 1)
+        titleLabel.text = NSLocalizedString("Yakimovich plants", comment: "")
+        searchBarField.placeholder = NSLocalizedString("search plants", comment: "")
     }
    
      

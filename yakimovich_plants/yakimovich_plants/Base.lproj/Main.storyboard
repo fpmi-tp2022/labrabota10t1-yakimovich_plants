@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -76,6 +77,7 @@
                         <outlet property="labelResult" destination="Z7V-tL-bC9" id="Bc5-p0-gSc"/>
                         <outlet property="login_scene1" destination="BYv-zD-40p" id="udR-O2-dyw"/>
                         <outlet property="password_scene1" destination="rIW-Qv-85P" id="I4i-BW-940"/>
+                        <outlet property="signButton" destination="erk-JZ-b4u" id="TbX-LL-UNM"/>
                         <outlet property="switcherLabel" destination="emo-MS-xRy" id="CSb-1Y-rpi"/>
                     </connections>
                 </viewController>
@@ -184,6 +186,8 @@
                         <outlet property="password" destination="Wca-zJ-h9s" id="JZ2-w4-vIc"/>
                         <outlet property="resultLabel" destination="cAc-CK-BTR" id="k47-rK-DlD"/>
                         <outlet property="rpassword" destination="HpS-CG-aEw" id="6kN-1t-c4a"/>
+                        <outlet property="signUpButton" destination="Enx-ha-080" id="0zg-Qd-Sv9"/>
+                        <outlet property="viewMapButton" destination="EkP-vz-U6n" id="n7W-eW-5As"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYe-XY-kcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -229,6 +233,7 @@
                     </view>
                     <connections>
                         <outlet property="pageSwitcher" destination="wvx-ko-2A0" id="uEL-zM-6pZ"/>
+                        <outlet property="titleLabel1" destination="fuJ-c3-wo8" id="UrN-6i-LGq"/>
                         <outlet property="weather" destination="Cld-oY-EfK" id="IQV-mV-EpL"/>
                     </connections>
                 </viewController>
@@ -281,6 +286,7 @@
                     <connections>
                         <outlet property="pageSwitcher" destination="ILj-18-TAa" id="ntO-yJ-1EC"/>
                         <outlet property="searchBarField" destination="c7u-Qk-ABW" id="k36-FM-OjI"/>
+                        <outlet property="titleLabel" destination="0HM-vM-Ha2" id="rhA-tV-vM1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qF-vp-4hl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -344,7 +350,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSr-9w-KDt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSr-9w-KDt">
                                 <rect key="frame" x="118" y="707" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
@@ -441,16 +447,21 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="careGuide" destination="y88-IV-pMT" id="dEQ-VW-Jbu"/>
                         <outlet property="descriptionLabel" destination="9L7-3K-LPd" id="81v-fX-01i"/>
                         <outlet property="humidity" destination="wel-nW-He7" id="OpR-21-1bN"/>
+                        <outlet property="humidityLabel" destination="cSr-9w-KDt" id="20e-Qq-7HL"/>
                         <outlet property="humidityReq" destination="j9j-lu-MsR" id="apF-Sp-EVW"/>
                         <outlet property="img" destination="Qky-8d-7N3" id="BM6-Ar-YbI"/>
                         <outlet property="location" destination="2En-uR-4b6" id="FwT-zO-KNK"/>
+                        <outlet property="locationLabel" destination="BKL-0k-DPt" id="fbx-Gu-9Fv"/>
                         <outlet property="locationReq" destination="IHk-1A-AOs" id="sCK-J1-25A"/>
                         <outlet property="plantNameLabel" destination="f1Q-mn-gmo" id="Ecz-Sq-NbY"/>
                         <outlet property="size" destination="1UA-H5-8Cv" id="aAe-b8-eeY"/>
+                        <outlet property="sizeLabel" destination="Hnu-fz-dDg" id="pGP-hj-BjS"/>
                         <outlet property="sizeReq" destination="YLF-bm-s7J" id="Fbs-oZ-1mV"/>
-                        <outlet property="water" destination="EQ7-wm-UdZ" id="PGa-dq-qOP"/>
+                        <outlet property="water" destination="EQ7-wm-UdZ" id="729-FY-xAc"/>
+                        <outlet property="waterLabel" destination="quQ-KX-yVQ" id="TmS-w0-QAz"/>
                         <outlet property="waterReq" destination="vAX-W5-ab7" id="4di-7W-Sin"/>
                     </connections>
                 </viewController>
@@ -484,7 +495,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTr-HT-Akt">
                                 <rect key="frame" x="136" y="694" width="143" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Selrct"/>
+                                <state key="normal" title="Select"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RXZ-Km-QSV"/>
@@ -493,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXy-wP-B9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3827.5362318840585" y="187.5"/>
+            <point key="canvasLocation" x="3816" y="136"/>
         </scene>
     </scenes>
     <resources>
