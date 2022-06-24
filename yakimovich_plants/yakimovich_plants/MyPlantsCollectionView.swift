@@ -30,13 +30,15 @@ class MyPlantsCollectionView:   UICollectionView, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        print("hello2")
         myPlants.insert(cells[indexPath.row].plantName)
-        let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
-        let dictionary = NSMutableDictionary(contentsOfFile: path_plants)
+    //    let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
+        let path_plants = Bundle.main.path(forResource: "usersPlants", ofType: "plist")
+
+        let dictionary = NSMutableDictionary(contentsOfFile: path_plants!)
         var arr = dictionary?.object(forKey: "plants_\(current_user)") as? [String]
         arr?.append(cells[indexPath.row].plantName)
         selectedPlant = cells[indexPath.row].plantName
         dictionary?.setObject(arr, forKey: "plants_\(current_user)" as NSCopying)
-        dictionary?.write(toFile: path_plants, atomically: true)
+        dictionary?.write(toFile: path_plants!, atomically: true)
         
         NotificationCenter.default.post(name: NSNotification.Name("loadInfo"), object: nil)
       

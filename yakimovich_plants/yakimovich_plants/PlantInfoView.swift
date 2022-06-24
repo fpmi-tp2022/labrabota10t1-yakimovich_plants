@@ -35,7 +35,7 @@ class PlantInfoView : UIViewController{
         super.viewDidLoad()
         plantName = selectedPlant
         plantNameLabel.text = NSLocalizedString(plantName, comment: "")
-        let path = Bundle.main.path(forResource: "plantsData", ofType: ".plist")
+        let path = Bundle.main.path(forResource: "plantsData", ofType: "plist")
         let dictionary = NSDictionary(contentsOfFile: path!)
         let data = dictionary?.object(forKey: "plantInfo") as? NSDictionary
         let dictPlant = data?.value(forKey: plantName) as? NSDictionary

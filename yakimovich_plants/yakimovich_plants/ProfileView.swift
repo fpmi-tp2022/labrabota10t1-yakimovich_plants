@@ -43,8 +43,10 @@ class ProfileView : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         pageSwitcher.selectedSegmentIndex = 0
-        let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
-        let dictionary = NSMutableDictionary(contentsOfFile: path_plants)
+       // let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
+        let path_plants = Bundle.main.path(forResource: "usersPlants", ofType: "plist")
+
+        let dictionary = NSMutableDictionary(contentsOfFile: path_plants!)
         let arr = dictionary?.object(forKey: "plants_\(current_user)") as? [String]
         var i = 0
         while(i < arr?.count ?? 0){
@@ -52,14 +54,16 @@ class ProfileView : UIViewController{
             i += 1
         }
         
-        let path_city = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userCity.plist"
-                    let plist2 = NSMutableDictionary(contentsOfFile: path_city)
+       // let path_city = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userCity.plist"
+        let path_city = Bundle.main.path(forResource: "userCity", ofType: "plist")
+
+                    let plist2 = NSMutableDictionary(contentsOfFile: path_city!)
         userCity = plist2?.object(forKey: current_user) as! String
         
         self.weatherVM.fetchWeather(city: userCity)
         sleep(1)
         print(userCity)
-        weather.text  = "Temperature: " + String(Int(weatherVM.temperature)) + "ºC"
+        weather.text  = "T: " + String(Int(weatherVM.temperature)) + "ºC"
         
         view.addSubview(galleryCollectionView)
         galleryCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true

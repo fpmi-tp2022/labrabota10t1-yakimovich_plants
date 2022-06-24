@@ -7,7 +7,7 @@ struct PlantModel{
     var mainImage : UIImage
     var plantName: String
     static func fetchPlants() -> [PlantModel]{
-        let path = Bundle.main.path(forResource: "plantsData", ofType: ".plist")
+        let path = Bundle.main.path(forResource: "plantsData", ofType: "plist")
         let dictionary = NSDictionary(contentsOfFile: path!)
         let data = dictionary?.object(forKey: "plants") as? [NSDictionary]
         let n : Int = data?.count ?? 0
@@ -33,7 +33,7 @@ struct PlantModel{
        
     }
     static func unfetchPlants() -> [PlantModel]{
-        let path = Bundle.main.path(forResource: "plantsData", ofType: ".plist")
+        let path = Bundle.main.path(forResource: "plantsData", ofType: "plist")
         let dictionary = NSDictionary(contentsOfFile: path!)
         let data = dictionary?.object(forKey: "plants") as? [NSDictionary]
         let n : Int = data?.count ?? 0

@@ -66,8 +66,10 @@ class RegistrationView: UIViewController{
         }
     }
     @IBAction func signUpClick(_ sender: Any) {
-        let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
-        let plist = NSMutableDictionary(contentsOfFile: path)
+    //    let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
+        let path = Bundle.main.path(forResource: "userData", ofType: "plist")
+
+        let plist = NSMutableDictionary(contentsOfFile: path!)
         
         let pass = plist?.value(forKey: login.text!)
 
@@ -78,11 +80,12 @@ class RegistrationView: UIViewController{
             resultLabel.text = NSLocalizedString("Incorrect data!", comment: "")
         }
         else{
-                    let plist = NSMutableDictionary(contentsOfFile: path)
+                    let plist = NSMutableDictionary(contentsOfFile: path!)
                     plist?.setObject(password.text, forKey: login.text as! NSCopying)
-                    plist?.write(toFile: path, atomically: true)
+                    plist?.write(toFile: path!, atomically: true)
             
-            let path_city = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userCity.plist"
+            //let path_city = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userCity.plist"
+            let path_city = Bundle.main.path(forResource: "userCity", ofType: "plist")!
                         let plist2 = NSMutableDictionary(contentsOfFile: path_city)
                         plist2?.setObject(address.text, forKey: login.text as! NSCopying)
                         plist2?.write(toFile: path_city, atomically: true)
@@ -92,7 +95,9 @@ class RegistrationView: UIViewController{
             passwordSave = ""
             rpasswordSave = ""
             citySave = ""
-            let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
+           // let path_plants = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/usersPlants.plist"
+            let path_plants = Bundle.main.path(forResource: "usersPlants", ofType: "plist")!
+
             let dictionary = NSMutableDictionary(contentsOfFile: path_plants)
             let arr = [String]()
             dictionary?.setObject(arr, forKey: "plants_\(login.text!)" as NSCopying)

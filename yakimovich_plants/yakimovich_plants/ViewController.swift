@@ -31,9 +31,10 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var signButton: UIButton!
     @IBAction func buttonSignIn(_ sender: Any) {
-        let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
-                print(path)
-                let plist = NSMutableDictionary(contentsOfFile: path)
+        let path = Bundle.main.path(forResource: "userData", ofType: "plist")
+        //let path = "/Users/depravo/julia/labrabota10t1-yakimovich_plants/yakimovich_plants/yakimovich_plants/userData.plist"
+             //  print(path)
+                let plist = NSMutableDictionary(contentsOfFile: path!)
                 
                 let pass = plist?.value(forKey: login_scene1.text!)
 
