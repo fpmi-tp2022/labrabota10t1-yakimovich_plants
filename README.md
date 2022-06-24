@@ -3,8 +3,10 @@
 
 ## Installation
 
-Clone project from git using git clone command
+Clone project from git using git clone command(for example)
+
 Run project
+
 Sign up and enjoy!
 
 ## Usage
